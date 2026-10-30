@@ -1,0 +1,10 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# local tool settings
+.claude/settings.local.json
+
+# OS junk
+Thumbs.db
+Desktop.ini

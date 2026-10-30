@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/memory_panel.gd" id="1"]
+[ext_resource type="Theme" path="res://assets/theme/momiao_theme.tres" id="2"]
+
+[node name="MemoryPanel" type="PanelContainer"]
+visible = false
+custom_minimum_size = Vector2(460, 340)
+theme = ExtResource("2")
+theme_type_variation = &"InputCard"
+script = ExtResource("1")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Header" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="VBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.545, 0.118, 0.118, 1)
+theme_override_font_sizes/font_size = 20
+text = "墨喵记得…"
+
+[node name="Close" type="Button" parent="VBox/Header"]
+custom_minimum_size = Vector2(64, 28)
+layout_mode = 2
+text = "关闭"
+
+[node name="Body" type="RichTextLabel" parent="VBox"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = false
+scroll_active = true
+
+[node name="Buttons" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Refresh" type="Button" parent="VBox/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "刷新"
+
+[node name="Clear" type="Button" parent="VBox/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "清空记忆"

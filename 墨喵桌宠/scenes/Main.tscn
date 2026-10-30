@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://c2bfs2ekeleo0"]
+
+[ext_resource type="Script" uid="uid://dma1rjn6d0n6m" path="res://scripts/main.gd" id="1_lhr70"]
+[ext_resource type="Script" uid="uid://v85w58cf0dx2" path="res://scripts/window_controller.gd" id="2_wp0k4"]
+[ext_resource type="Script" uid="uid://kaiskmp4a16l" path="res://scripts/services/model_client.gd" id="3_bjd11"]
+[ext_resource type="Script" uid="uid://c421y33tbs82q" path="res://scripts/pet_brain.gd" id="4_qmy6f"]
+[ext_resource type="Theme" uid="uid://dosxwcf62wii6" path="res://assets/theme/momiao_theme.tres" id="5_mwfav"]
+[ext_resource type="PackedScene" uid="uid://e4obxerewm5o" path="res://scenes/components/CharacterView.tscn" id="6_3p2gp"]
+[ext_resource type="Script" uid="uid://c1q2rb3q7nlwl" path="res://scripts/ui/pet_hit_area.gd" id="7_cvmbd"]
+[ext_resource type="PackedScene" uid="uid://2lyuismi1r70" path="res://scenes/components/Bubble.tscn" id="8_ft6cd"]
+[ext_resource type="PackedScene" uid="uid://d2k0eapcof2bq" path="res://scenes/components/InputPanel.tscn" id="9_bb450"]
+[ext_resource type="PackedScene" path="res://scenes/components/MemoryPanel.tscn" id="10_3p2gp"]
+[ext_resource type="Script" uid="uid://ceqxhm5ta2kio" path="res://scripts/ui/app_menu.gd" id="10_nfivy"]
+[ext_resource type="PackedScene" path="res://scenes/components/ConfirmPanel.tscn" id="11_cvmbd"]
+[ext_resource type="Script" uid="uid://ibfbaawofg28" path="res://scripts/services/sidecar_manager.gd" id="13_ft6cd"]
+[ext_resource type="Script" uid="uid://br6nv7n8qwp18" path="res://scripts/services/voice_player.gd" id="14_bb450"]
+[ext_resource type="Script" path="res://scripts/services/voice_input.gd" id="16_cvmbd"]
+
+[node name="Main" type="Node" unique_id=2090340992]
+script = ExtResource("1_lhr70")
+
+[node name="WindowController" type="Node" parent="." unique_id=1395725461]
+script = ExtResource("2_wp0k4")
+
+[node name="ModelClient" type="Node" parent="." unique_id=1433237176]
+script = ExtResource("3_bjd11")
+
+[node name="PetBrain" type="Node" parent="." unique_id=340942314]
+script = ExtResource("4_qmy6f")
+
+[node name="UILayer" type="CanvasLayer" parent="." unique_id=1987492913]
+layer = 10
+
+[node name="UI" type="Control" parent="UILayer" unique_id=1114991260]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("5_mwfav")
+
+[node name="CharacterAnchor" type="Node2D" parent="UILayer/UI" unique_id=613933933]
+position = Vector2(260, 455)
+
+[node name="CharacterView" parent="UILayer/UI/CharacterAnchor" unique_id=1692253749 instance=ExtResource("6_3p2gp")]
+
+[node name="PetHitArea" type="Control" parent="UILayer/UI" unique_id=1746139186]
+anchors_preset = 0
+offset_left = 55.0
+offset_top = 190.0
+offset_right = 465.0
+offset_bottom = 690.0
+script = ExtResource("7_cvmbd")
+
+[node name="Bubble" parent="UILayer/UI" unique_id=1527481652 instance=ExtResource("8_ft6cd")]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 380.0
+offset_bottom = 24.0
+
+[node name="InputPanel" parent="UILayer/UI" unique_id=1716762246 instance=ExtResource("9_bb450")]
+layout_mode = 0
+
+[node name="DebugHUD" type="Label" parent="UILayer/UI" unique_id=91368154]
+visible = false
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 352.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.545, 0.118, 0.118, 1)
+theme_override_font_sizes/font_size = 13
+
+[node name="MemoryPanel" parent="UILayer/UI" unique_id=79327251 instance=ExtResource("10_3p2gp")]
+layout_mode = 0
+
+[node name="ConfirmPanel" parent="UILayer/UI" unique_id=1202005276 instance=ExtResource("11_cvmbd")]
+layout_mode = 0
+
+[node name="Tray" type="StatusIndicator" parent="." unique_id=1835975740]
+menu = NodePath("TrayMenu")
+
+[node name="TrayMenu" type="PopupMenu" parent="Tray" unique_id=1013323981]
+theme = ExtResource("5_mwfav")
+script = ExtResource("10_nfivy")
+
+[node name="AppMenu" type="PopupMenu" parent="." unique_id=664153763]
+theme = ExtResource("5_mwfav")
+script = ExtResource("10_nfivy")
+
+[node name="SidecarManager" type="Node" parent="." unique_id=499807313]
+script = ExtResource("13_ft6cd")
+
+[node name="VoicePlayer" type="Node" parent="." unique_id=1737040594]
+script = ExtResource("14_bb450")
+
+[node name="VoiceInput" type="Node" parent="." unique_id=1007434152]
+script = ExtResource("16_cvmbd")

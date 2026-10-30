@@ -1,0 +1,972 @@
+{
+  "version": 2,
+  "variant": "female",
+  "cell": 512,
+  "sheet_size": [
+    4096,
+    4096
+  ],
+  "sheets": {
+    "a": "res://assets/sprites/sheet_a_walk_flute_yawn_read.png",
+    "b": "res://assets/sprites/sheet_b_poem_look.png",
+    "c": "res://assets/sprites/sheet_c_happy_sleep_write_confused.png",
+    "d": "res://assets/sprites/sheet_d_run_chase_back.png",
+    "sheet_walk_flute": "res://assets/sprites/sheet_walk_flute.png",
+    "sheet_steal_fish": "res://assets/sprites/sheet_steal_fish.png",
+    "sheet_tsundere": "res://assets/sprites/sheet_tsundere.png",
+    "sheet_write": "res://assets/sprites/sheet_write.png",
+    "sheet_stretch": "res://assets/sprites/sheet_stretch.png",
+    "sheet_happy": "res://assets/sprites/sheet_happy.png",
+    "sheet_yawn": "res://assets/sprites/sheet_yawn.png",
+    "sheet_run_front": "res://assets/sprites/sheet_run_front.png",
+    "sheet_head_tilt": "res://assets/sprites/sheet_head_tilt.png",
+    "sheet_fall": "res://assets/sprites/sheet_fall.png",
+    "sheet_angry": "res://assets/sprites/sheet_angry.png",
+    "sheet_confused": "res://assets/sprites/sheet_confused.png",
+    "sheet_getup": "res://assets/sprites/sheet_getup.png"
+  },
+  "state_map": {
+    "idle": "read",
+    "thinking": "poem",
+    "happy": "happy",
+    "confused": "confused",
+    "sleepy": "sleep",
+    "easter": "chase",
+    "dragging": "run_front"
+  },
+  "animations": {
+    "read": {
+      "sheet": "a",
+      "segments": [
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "bbox": [
+        0.0,
+        0.0352,
+        1.0,
+        0.959
+      ]
+    },
+    "sleep": {
+      "sheet": "c",
+      "segments": [
+        {
+          "row": 3,
+          "start": 0,
+          "count": 5
+        }
+      ],
+      "fps": 3,
+      "loop": true,
+      "bbox": [
+        0.0,
+        0.0625,
+        1.0,
+        0.9258
+      ]
+    },
+    "poem": {
+      "sheet": "b",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 6
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "bbox": [
+        0.0664,
+        0.0,
+        0.9355,
+        1.0
+      ]
+    },
+    "look": {
+      "sheet": "b",
+      "segments": [
+        {
+          "row": 2,
+          "start": 0,
+          "count": 5
+        }
+      ],
+      "fps": 5,
+      "loop": false,
+      "bbox": [
+        0.1523,
+        0.0,
+        0.8496,
+        1.0
+      ]
+    },
+    "run_back": {
+      "sheet": "d",
+      "segments": [
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 6
+        }
+      ],
+      "fps": 10,
+      "loop": true,
+      "bbox": [
+        0.1309,
+        0.0,
+        0.8594,
+        1.0
+      ]
+    },
+    "chase": {
+      "sheet": "d",
+      "segments": [
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 6
+        }
+      ],
+      "fps": 10,
+      "loop": true,
+      "bbox": [
+        0.0039,
+        0.0,
+        0.9883,
+        1.0
+      ]
+    },
+    "walk_flute": {
+      "sheet": "sheet_walk_flute",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 8,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 9,
+          "start": 0,
+          "count": 1
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "write": {
+      "sheet": "sheet_write",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 8,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 9,
+          "start": 0,
+          "count": 1
+        }
+      ],
+      "fps": 5,
+      "loop": true,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "happy": {
+      "sheet": "sheet_happy",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 8,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 9,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 10,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 11,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 12,
+          "start": 0,
+          "count": 1
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "confused": {
+      "sheet": "sheet_confused",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 8,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 9,
+          "start": 0,
+          "count": 1
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "run_front": {
+      "sheet": "sheet_run_front",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 5
+        }
+      ],
+      "fps": 10,
+      "loop": true,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "yawn": {
+      "sheet": "sheet_yawn",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 8,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 9,
+          "start": 0,
+          "count": 1
+        }
+      ],
+      "fps": 5,
+      "loop": false,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "stretch": {
+      "sheet": "sheet_stretch",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 8,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 9,
+          "start": 0,
+          "count": 1
+        }
+      ],
+      "fps": 5,
+      "loop": false,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "steal_fish": {
+      "sheet": "sheet_steal_fish",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 5
+        }
+      ],
+      "fps": 6,
+      "loop": false,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "tsundere": {
+      "sheet": "sheet_tsundere",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 5
+        }
+      ],
+      "fps": 6,
+      "loop": false,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "head_tilt": {
+      "sheet": "sheet_head_tilt",
+      "segments": [
+        {
+          "row": 2,
+          "start": 0,
+          "count": 5
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 3
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 5
+        }
+      ],
+      "fps": 5,
+      "loop": false,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "fall": {
+      "sheet": "sheet_fall",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 5
+        }
+      ],
+      "fps": 8,
+      "loop": false,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "angry": {
+      "sheet": "sheet_angry",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 5
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 5
+        }
+      ],
+      "fps": 6,
+      "loop": true,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "front_flute": {
+      "sheet": "a",
+      "segments": [
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        }
+      ],
+      "fps": 8,
+      "loop": true,
+      "bbox": [
+        0.1172,
+        0.0,
+        0.8867,
+        1.0
+      ]
+    },
+    "getup": {
+      "sheet": "sheet_getup",
+      "segments": [
+        {
+          "row": 0,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 1,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 2,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 3,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 4,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 5,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 6,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 7,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 8,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 9,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 10,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 11,
+          "start": 0,
+          "count": 8
+        },
+        {
+          "row": 12,
+          "start": 0,
+          "count": 1
+        }
+      ],
+      "fps": 12,
+      "loop": false,
+      "bbox": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "idle_micro": [
+    {
+      "anim": "walk_flute",
+      "weight": 0.2,
+      "loops": [
+        2,
+        3
+      ]
+    },
+    {
+      "anim": "look",
+      "weight": 0.18,
+      "one_shot": true
+    },
+    {
+      "anim": "yawn",
+      "weight": 0.14,
+      "one_shot": true
+    },
+    {
+      "anim": "front_flute",
+      "weight": 0.18,
+      "loops": [
+        2,
+        3
+      ]
+    },
+    {
+      "anim": "write",
+      "weight": 0.15,
+      "loops": [
+        2,
+        3
+      ]
+    },
+    {
+      "anim": "read",
+      "weight": 0.15,
+      "loops": [
+        2,
+        3
+      ]
+    }
+  ],
+  "sheet_rows": {
+    "a": 8,
+    "b": 8,
+    "c": 8,
+    "d": 8,
+    "sheet_walk_flute": 10,
+    "sheet_write": 10,
+    "sheet_stretch": 10,
+    "sheet_yawn": 10,
+    "sheet_confused": 10,
+    "sheet_happy": 13,
+    "sheet_steal_fish": 8,
+    "sheet_tsundere": 8,
+    "sheet_run_front": 8,
+    "sheet_head_tilt": 8,
+    "sheet_fall": 8,
+    "sheet_angry": 2,
+    "sheet_getup": 13
+  }
+}

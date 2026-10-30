@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://2lyuismi1r70"]
+
+[ext_resource type="Theme" uid="uid://dosxwcf62wii6" path="res://assets/theme/momiao_theme.tres" id="1_c6yip"]
+[ext_resource type="Script" uid="uid://c7pyfntmkhxy4" path="res://scripts/ui/bubble.gd" id="2_gb1ps"]
+
+[node name="Bubble" type="PanelContainer" unique_id=1527481652]
+visible = false
+custom_minimum_size = Vector2(380, 0)
+offset_left = 60.0
+offset_top = 40.0
+offset_right = 93.0
+offset_bottom = 64.0
+theme = ExtResource("1_c6yip")
+theme_type_variation = &"BubblePanel"
+script = ExtResource("2_gb1ps")
+
+[node name="Text" type="RichTextLabel" parent="." unique_id=1230214843]
+custom_minimum_size = Vector2(340, 0)
+layout_mode = 2
+mouse_filter = 2
+fit_content = true
+scroll_active = false

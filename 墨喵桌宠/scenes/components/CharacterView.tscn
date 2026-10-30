@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://e4obxerewm5o"]
+
+[ext_resource type="Script" uid="uid://dcicc6pygoeox" path="res://scripts/character_view.gd" id="1_pkq87"]
+[ext_resource type="Theme" path="res://assets/theme/momiao_theme.tres" id="2_w6ql0"]
+
+[node name="CharacterView" type="Node2D"]
+script = ExtResource("1_pkq87")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+
+[node name="MissingLabel" type="Label" parent="."]
+visible = false
+offset_left = -150.0
+offset_top = -30.0
+offset_right = 150.0
+offset_bottom = 60.0
+theme = ExtResource("2_w6ql0")
+text = "精灵素材缺失"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2

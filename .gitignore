@@ -1,0 +1,24 @@
+# --- Godot ---
+.godot/
+*.tmp
+export/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+
+# --- 模型与大数据（按 README「模型下载」自行获取） ---
+sidecar/shiyun-v7.9/shiyun-godot-v7.9/models/models/
+sidecar/shiyun-v7.9/shiyun-godot-v7.9/models/Qwen3-1.7B/
+sidecar/shiyun-v7.9/shiyun-godot-v7.9/models/Qwen2.5-1.5B-Instruct/
+sidecar/shiyun-v7.9/shiyun-godot-v7.9/models/faster-whisper-small/
+sidecar/shiyun-v7.9/shiyun-godot-v7.9/models/mo-miao-1.5b/
+
+# --- 本地发布物 ---
+发布/
+*.exe
+
+# --- 测试产物 ---
+*_result.json
+test_*.log

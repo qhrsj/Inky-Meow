@@ -1,0 +1,145 @@
+[gd_resource type="Theme" format=3 uid="uid://dosxwcf62wii6"]
+
+[sub_resource type="StyleBoxFlat" id="PanelPaper"]
+content_margin_left = 16.0
+content_margin_top = 12.0
+content_margin_right = 16.0
+content_margin_bottom = 12.0
+bg_color = Color(0.976, 0.949, 0.886, 0.97)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.478, 0.416, 0.322, 0.85)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+shadow_color = Color(0.16, 0.12, 0.08, 0.18)
+shadow_size = 6
+
+[sub_resource type="StyleBoxFlat" id="InputFocus"]
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 6.0
+bg_color = Color(0.996, 0.984, 0.957, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.545, 0.118, 0.118, 0.9)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="ButtonHover"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.925, 0.878, 0.784, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.545, 0.118, 0.118, 0.85)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="ButtonNormal"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.949, 0.918, 0.847, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.6, 0.53, 0.42, 0.9)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="ButtonPressed"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.545, 0.118, 0.118, 0.9)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.4, 0.08, 0.08, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="InputNormal"]
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 6.0
+bg_color = Color(0.996, 0.984, 0.957, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.68, 0.61, 0.5, 0.8)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="MenuHover"]
+bg_color = Color(0.898, 0.847, 0.741, 0.95)
+border_width_left = 2
+border_color = Color(0.545, 0.118, 0.118, 0.75)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="SystemFont" id="SystemFont_1"]
+font_names = PackedStringArray("Noto Serif CJK SC", "Source Han Serif SC", "Microsoft YaHei", "SimSun")
+
+[resource]
+default_font = SubResource("SystemFont_1")
+default_font_size = 18
+BubblePanel/base_type = &"PanelContainer"
+BubblePanel/styles/panel = SubResource("PanelPaper")
+Button/colors/font_color = Color(0.23, 0.2, 0.15, 1)
+Button/colors/font_focus_color = Color(0.23137255, 0.19607843, 0.14901961, 1)
+Button/colors/font_hover_color = Color(0.545, 0.118, 0.118, 1)
+Button/colors/font_pressed_color = Color(0.973, 0.945, 0.882, 1)
+Button/font_sizes/font_size = 17
+Button/styles/focus = SubResource("InputFocus")
+Button/styles/hover = SubResource("ButtonHover")
+Button/styles/normal = SubResource("ButtonNormal")
+Button/styles/pressed = SubResource("ButtonPressed")
+InputCard/base_type = &"PanelContainer"
+InputCard/styles/panel = SubResource("PanelPaper")
+Label/colors/font_color = Color(0.23, 0.2, 0.15, 1)
+Label/font_sizes/font_size = 18
+LineEdit/colors/font_color = Color(0.23, 0.2, 0.15, 1)
+LineEdit/font_sizes/font_size = 17
+LineEdit/styles/focus = SubResource("InputFocus")
+LineEdit/styles/normal = SubResource("InputNormal")
+PopupMenu/colors/font_color = Color(0.23, 0.2, 0.15, 1)
+PopupMenu/colors/font_hover_color = Color(0.545, 0.118, 0.118, 1)
+PopupMenu/font_sizes/font_size = 17
+PopupMenu/styles/hover = SubResource("MenuHover")
+PopupMenu/styles/panel = SubResource("PanelPaper")
+RichTextLabel/colors/default_color = Color(0.23, 0.2, 0.15, 1)
+RichTextLabel/font_sizes/normal_font_size = 18
+TextEdit/colors/font_color = Color(0.23, 0.2, 0.15, 1)
+TextEdit/font_sizes/font_size = 17
+TextEdit/styles/focus = SubResource("InputFocus")
+TextEdit/styles/normal = SubResource("InputNormal")

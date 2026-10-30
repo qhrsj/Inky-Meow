@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://d2k0eapcof2bq"]
+
+[ext_resource type="Theme" uid="uid://dosxwcf62wii6" path="res://assets/theme/momiao_theme.tres" id="1_lgram"]
+[ext_resource type="Script" uid="uid://cfrgsxed6e1d6" path="res://scripts/ui/input_panel.gd" id="2_5c551"]
+
+[node name="InputPanel" type="PanelContainer" unique_id=1716762246]
+visible = false
+custom_minimum_size = Vector2(480, 292)
+offset_left = 20.0
+offset_top = 12.0
+offset_right = 500.0
+offset_bottom = 304.0
+theme = ExtResource("1_lgram")
+theme_type_variation = &"InputCard"
+script = ExtResource("2_5c551")
+
+[node name="VBox" type="VBoxContainer" parent="." unique_id=889550732]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 6
+
+[node name="Header" type="HBoxContainer" parent="VBox" unique_id=1568893112]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="VBox/Header" unique_id=1452342548]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.545, 0.118, 0.118, 1)
+theme_override_font_sizes/font_size = 20
+text = "点题喂猫"
+
+[node name="Voice" type="Button" parent="VBox/Header"]
+custom_minimum_size = Vector2(56, 28)
+layout_mode = 2
+text = "语音"
+
+[node name="Close" type="Button" parent="VBox/Header" unique_id=939372017]
+custom_minimum_size = Vector2(64, 28)
+layout_mode = 2
+text = "关闭"
+
+[node name="Prompt" type="Label" parent="VBox" unique_id=627089175]
+layout_mode = 2
+theme_override_font_sizes/font_size = 15
+text = "输入一个词（1–4 字，如：孤舟）"
+autowrap_mode = 3
+
+[node name="Editor" type="TextEdit" parent="VBox" unique_id=636401347]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+placeholder_text = "孤舟"
+wrap_mode = 1
+
+[node name="Hint" type="Label" parent="VBox" unique_id=272149592]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.545, 0.118, 0.118, 1)
+theme_override_font_sizes/font_size = 14
+autowrap_mode = 3
+
+[node name="Buttons" type="HBoxContainer" parent="VBox" unique_id=144518033]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ThemeBtn" type="Button" parent="VBox/Buttons" unique_id=1372650220]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "点题"
+
+[node name="CoupletBtn" type="Button" parent="VBox/Buttons" unique_id=793140048]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "对句"
+
+[node name="CheckBtn" type="Button" parent="VBox/Buttons" unique_id=1370548491]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "体检"
+
+[node name="WriteBtn" type="Button" parent="VBox/Buttons" unique_id=273049975]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "续写"
+
+[node name="ChatBtn" type="Button" parent="VBox/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "聊聊"
+
+[node name="Result" type="RichTextLabel" parent="VBox" unique_id=326605220]
+visible = false
+custom_minimum_size = Vector2(0, 110)
+layout_mode = 2
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true
+scroll_following = false

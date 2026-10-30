@@ -1,0 +1,19 @@
+# 训练与推理依赖
+# 安装（国内建议走镜像）：
+#   pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
+
+torch>=2.0
+transformers>=4.40
+peft>=0.10
+accelerate>=0.30
+safetensors
+edge-tts>=7
+pillow>=10
+faster-whisper>=1.0
+sounddevice>=0.5
+
+# 记忆/工具回复统一简体（运行时也要用）
+zhconv>=1.4
+
+# 仅 build_duizhang_class.py 需要（对仗义类聚类）
+networkx>=3.0
