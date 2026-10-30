@@ -25,26 +25,26 @@ Godot 4.7 主程序 + Python AI sidecar，全部**本地推理**，不上传任�
 - **19 个动作微剧场**：偷吃小鱼干、追蝶、傲娇、跌倒起身、生气……随机编排
 - **诗笺收藏**：满意的诗一键收藏，随时翻阅
 
-## 🎬 功能演示
+## 🎬 功能演示（真机录制）
 
 <table>
 <tr>
 <td align="center" width="50%">
-<img src="docs/gifs/demo-compose.gif" width="420"/><br/>
-<b>点题成诗</b> — 说个词，五言/七言自动选体，题字藏于句中
+<img src="docs/gifs/demo-compose.gif" width="210"/><br/>
+<b>点题成诗</b> — 说个词，五言/七言自动选体<br/>题字藏于句中
 </td>
 <td align="center" width="50%">
-<img src="docs/gifs/demo-chat.gif" width="420"/><br/>
+<img src="docs/gifs/demo-chat.gif" width="210"/><br/>
 <b>闲聊共情</b> — 加班的委屈、失眠的夜，它都接得住
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
-<img src="docs/gifs/demo-feihua.gif" width="420"/><br/>
+<img src="docs/gifs/demo-feihua.gif" width="210"/><br/>
 <b>飞花令</b> — 「飞花令，月」开局，29 万诗库里轮流接句
 </td>
 <td align="center" width="50%">
-<img src="docs/gifs/demo-check.gif" width="420"/><br/>
+<img src="docs/gifs/demo-check.gif" width="210"/><br/>
 <b>格律体检</b> — 平仄、押韵、句式逐项报告
 </td>
 </tr>
@@ -53,7 +53,7 @@ Godot 4.7 主程序 + Python AI sidecar，全部**本地推理**，不上传任�
 ### ⏳ 番茄钟专注陪伴（完整循环）
 
 <p align="center">
-  <img src="docs/gifs/demo-pomodoro.gif" width="460"/>
+  <img src="docs/gifs/demo-pomodoro.gif" width="250"/>
 </p>
 
 墨喵的番茄钟不是冰冷的计时器，是**陪读**：
@@ -67,7 +67,7 @@ Godot 4.7 主程序 + Python AI sidecar，全部**本地推理**，不上传任�
 ### 📜 诗笺收藏
 
 <p align="center">
-  <img src="docs/gifs/demo-anthology.gif" width="460"/>
+  <img src="docs/gifs/demo-anthology.gif" width="250"/>
 </p>
 
 遇到喜欢的诗，右键「收藏这首诗」——墨喵会把它**工整抄进诗笺本**：册页上有诗题、
