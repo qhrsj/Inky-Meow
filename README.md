@@ -45,7 +45,7 @@ Godot 4.7 主程序 + Python AI sidecar，全部**本地推理**，不上传任�
 ### 方式二：从源码运行
 
 ```bash
-git clone https://github.com/你的用户名/inky-meow.git
+git clone https://github.com/qhrsj/Inky-Meow.git
 cd inky-meow
 
 # 1) 安装 AI 依赖（建议 Python 3.10/3.11）
