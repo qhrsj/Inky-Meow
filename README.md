@@ -25,6 +25,45 @@ Godot 4.7 主程序 + Python AI sidecar，全部**本地推理**，不上传任�
 - **19 个动作微剧场**：偷吃小鱼干、追蝶、傲娇、跌倒起身、生气……随机编排
 - **诗笺收藏**：满意的诗一键收藏，随时翻阅
 
+## 🎬 功能演示
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="docs/gifs/demo-compose.gif" width="420"/><br/>
+<b>点题成诗</b> — 说个词，五言/七言自动选体，题字藏于句中
+</td>
+<td align="center" width="50%">
+<img src="docs/gifs/demo-chat.gif" width="420"/><br/>
+<b>闲聊共情</b> — 加班的委屈、失眠的夜，它都接得住
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+<img src="docs/gifs/demo-feihua.gif" width="420"/><br/>
+<b>飞花令</b> — 「飞花令，月」开局，29 万诗库里轮流接句
+</td>
+<td align="center" width="50%">
+<img src="docs/gifs/demo-check.gif" width="420"/><br/>
+<b>格律体检</b> — 平仄、押韵、句式逐项报告
+</td>
+</tr>
+</table>
+
+### ⏳ 番茄钟专注陪伴（完整循环）
+
+<p align="center">
+  <img src="docs/gifs/demo-pomodoro.gif" width="460"/>
+</p>
+
+墨喵的番茄钟不是冰冷的计时器，是**陪读**：
+
+- **25 分钟专注**：墨喵安静坐在砚台边读书（不闲逛、不表演、不打搅），气泡里静静走着倒计时
+- **完成一个番茄**：它合上书抬头看你一眼（开心帧），报「第 N 个番茄」并自动进入 **5 分钟休息**
+- **每 4 个番茄** → **15 分钟长休**，节奏 25/5/25/5/25/5/25/15
+- 专注期间**不累积困倦**（不会演变成趴睡）、**自动暂停桌面闲逛**，但你想聊天它随时应声
+- 右键菜单「专注陪伴（25 分钟）」一键开始/结束，气泡倒计时随点随看
+
 ## 🖼 更多演示
 
 <p align="center">
